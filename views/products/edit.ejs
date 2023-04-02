@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Add A PRODUCT</title>
+    </head>
+    <body>
+        <h1>EDIT A PRODUCT</h1>
+        <form action="/products/<%=product.id%>?_method=PUT" method="post">
+            <label for="name">PRODUCT NAME</label>
+            <input type="text" name="name" id="name">
+            <label for="price">PRODUCT PRICE</label>
+            <input type="number" name="price" id="price">
+            <select name="Category" id="">
+                <option value="fruit">fruit</option>
+            <option value="dairy">dairy</option>        
+        <option value="vegetable">vegetable</option>    </select>
+        <button>EDIT PRODUCT</button>
+        </form>
+            
+        
+        <a href="/products"> All Products</a>
+        <a href="/products/<%=product._id%>">Cancel</a>
+    </body>
+    </html>

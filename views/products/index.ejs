@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>All products</title>
+    </head>
+    <body>
+        <h1>ALL PRODUCTS</h1>
+        <ul>
+            <% for(let product of products){ %>
+                <li><a href="/products/<%=product._id%>"><%= product.name %></a></li>
+            <%}%> 
+        </ul>
+    </body>
+    </html>
